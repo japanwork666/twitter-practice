@@ -1,0 +1,25 @@
+@import _mixin
+
+@include hnpx(35)
+@include wnpx(35)
+@include hnpx(50)
+@include wnpx(50)
+@include hnpx(58)
+@include wnpx(110)
+@include hnpx(300)
+@include wnpx(745)
+@include wnpx(650)
+
+@import "../bootstrap/scss/functions"
+@import "../bootstrap/scss/variables"
+@import "../bootstrap/scss/variables-dark"
+$my-colors: ("darkest":#11171d,"post-blue":#15202b,"light-blue":#1ba1f2,"nav-dark":#1c2938,"img-head":#E0E0E0,"pic":#cbcbcbd4)
+
+$theme-colors: map-merge($theme-colors, $my-colors)
+@import "../bootstrap/scss/bootstrap"
+
+.active
+    border-bottom: 3px solid #1ba1f2
+
+.fs-size
+    font-size: 10px
